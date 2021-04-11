@@ -1,4 +1,4 @@
-console.log("Hi! Welcome!");
+console.log("Hi, welcome!");
 console.log("This little calculator indicates the fuel which is " +
     "most worth it today in terms of consume!\n");
 
@@ -23,6 +23,6 @@ do {
 
     do {
         isThereAnotherCheck = prompt("Do you want to make another check (y/n)?");
-    } while (isThereAnotherCheck != 'y' && isThereAnotherCheck != 'n');
+    } while (isThereAnotherCheck.toLowerCase() != 'y' && isThereAnotherCheck.toLowerCase() != 'n');
 
 } while (isThereAnotherCheck == 'y');
