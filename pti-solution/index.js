@@ -13,8 +13,6 @@ do {
     const equilibriumRatio = 0.7;
     let costRatio = alcoholCost / gasolineCost;
 
-    console.log(costRatio);
-
     if (costRatio > equilibriumRatio) {
         console.log("\nGasoline is the option which most worth it!\n");
     } else if (costRatio < equilibriumRatio) {
