@@ -1,8 +1,8 @@
-console.log("Hi, welcome!");
-console.log("This little calculator indicates the fuel which is " +
-    "most worth it today in terms of consume!\n");
+alert("Hi, welcome!");
+alert("This small calculator indicates which fuel option " +
+    "pays off the most in terms of consumption!\n");
 
-console.log("Let's go check!\n");
+alert("Let's go check!\n");
 
 let isThereAnotherCheck;
 
@@ -11,14 +11,14 @@ do {
     let alcoholCost = prompt("How much is alcohol costing?");
 
     const equilibriumRatio = 0.7;
-    let costRatio = alcoholCost / gasolineCost;
+    let costRatio = parseFloat(alcoholCost) / parseFloat(gasolineCost);
 
     if (costRatio > equilibriumRatio) {
-        console.log("\nGasoline is the option which most worth it!\n");
+        alert("\nGasoline is the option that pays off more!\n");
     } else if (costRatio < equilibriumRatio) {
-        console.log("\nAlcohol is the option which most worth it!\n");
+        alert("\nAlcohol is the option that pays off more!\n");
     } else {
-        console.log("\nDoesn't matter, both options worth the same!\n");
+        alert("\nIt doesn't matter, gasoline and alcohol are equivalent options!\n");
     }
 
     do {
